@@ -9,7 +9,7 @@ spec:
     matchLabels:
       app: boardgame
   template:
-    metadata:
+    metadata: 
       labels:
         app: boardgame
     spec:
