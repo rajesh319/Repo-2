@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: santa
-          image: rajesh947/secret-santa:latest # Replace with the actual image tag
+          image: rajesh947/secret-santa # Replace with the actual image tag
           ports:
             - containerPort: 8080 # Replace with the port your Tetris game listens on
 
