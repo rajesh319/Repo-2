@@ -4,7 +4,7 @@ metadata:
   name: santa -svc
 spec:
   selector:
-    app: board
+    app: santa
   ports:
     - protocol: TCP
       port: 80
