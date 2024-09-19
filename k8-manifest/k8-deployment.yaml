@@ -2,20 +2,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: santa-deployment
+  name: boardgame-deployment
 spec:
-  replicas: 2 # You can adjust the number of replicas as needed
+  replicas: 1 # You can adjust the number of replicas as needed
   selector:
     matchLabels:
-      app: santa
+      app: board
   template:
     metadata: 
       labels:
-        app: santa
+        app: board
     spec:
       containers:
-        - name: santa
-          image: rajesh947/secret-santa:v2 # Replace with the actual image tag
+        - name: board
+          image: rajesh947/boardgame:v3 # Replace with the actual image tag
           ports:
             - containerPort: 8080 # Replace with the port your Tetris game listens on
 
